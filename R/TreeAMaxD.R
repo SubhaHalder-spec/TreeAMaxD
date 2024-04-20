@@ -10,6 +10,7 @@
 #' @import stats
 #' @author Subha Halder
 TreeAMaxD <- function(sample_data, significance_level){
+  set.seed(456)
   sample_data <- lapply(sample_data, function(x) x[!is.na(x)])
   num_samples = 10000
   num_datasets <- length(sample_data)
